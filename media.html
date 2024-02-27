@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #nav{
+            border: 1px solid black;
+            height: 50px;
+            width: 70%;
+            background-color: rgb(235, 77, 19);
+            
+        }
+        #content{
+            display: flex;
+
+        }
+        #ist{
+            border: 1px solid blue;
+            width: 10%;
+            height: 200px;
+            background-color: green;
+        }
+        #sec{
+            border: 1px solid blue;
+            width: 50%;
+            height: 200px;
+            background-color: rgb(214, 214, 137);
+        }
+        #third{
+            border: 1px solid blue;
+            width: 10%;
+            height: 200px;
+            background-color: green;
+        }
+        #footer{
+            border: 1px solid black;
+            height: 50px;
+            width: 70%;
+            background-color: rgb(235, 77, 19);
+        }
+        @media screen and (max-width:375px){
+            #nav{
+                display: block;
+            }
+            #ist{
+                display: none;
+            }
+            #sec{
+                display: block;
+            }
+           #third{
+            display: none;
+           }
+           #footer{
+            display: none;
+           } 
+
+        }
+        @media screen and (min-width:375px) and (max-width:768px){
+            #nav{
+                display: block;
+            }
+            #ist{
+                display: none;
+            }
+            #sec{
+                display: inline;
+            }
+            #third{
+                display: none;
+            }
+            #footer{
+                display: block;
+            }
+
+        }
+        @media screen and (min-width:768px) and (max-width:1024px){
+           
+             #nav{
+                display: block;
+            }
+            #ist{
+                display: block;
+            }
+            #sec{
+                display: block;
+            }
+            #third{
+                display: block;
+            }
+            #footer{
+                display: block;
+            } 
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="nav"></div>
+        <div id="content">
+            <div id="ist"></div>
+            <div id="sec"></div>
+            <div id="third"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
